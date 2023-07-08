@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^teletrabajobtk\.info$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.teletrabajobtk\.info$
+RewriteRule ^/?$ "http\:\/\/teletrabajobtk\.info\/index\.php" [R=301,L]
+

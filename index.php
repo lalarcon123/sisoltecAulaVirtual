@@ -135,7 +135,8 @@
                                     <h5 class="mb-0">Welcome Blue Boddy !</h5>
                                     <p class="text-muted mt-2">Inicia sesión para continuar en Blue Boddy.</p>
                                 </div>
-                                <form class="mt-4 pt-2" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                                <!--<form class="mt-4 pt-2" action="<?php //echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">-->
+                                <form class="mt-4 pt-2" action="auth.php" method="post">
                                     <div class="mb-3 <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                                         <label class="form-label" for="username">Usuario</label>
                                         <input type="text" class="form-control" id="username" placeholder="Enter username" name="username" value="Henry">
@@ -148,7 +149,7 @@
                                             </div>
                                             <div class="flex-shrink-0">
                                                 <div class="">
-                                                    <a href="auth-recoverpw.php" class="text-muted">Olvidaste la contraseña?</a>
+                                                    <a href="" class="text-muted">Olvidaste la contraseña?</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,8 +164,11 @@
                                         <div class="col">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="remember-check">
-                                                <label class="form-check-label" for="remember-check">
-                                                    Recordarme
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div>
+                                                <label class="form-check-label" for="remember-check">Recordarme
                                                 </label>
                                             </div>
                                         </div>
@@ -176,13 +180,8 @@
                                 </form>
 
                                 <div class="mt-5 text-center">
-                                    <p class="text-muted mb-0">No tienes cuenta registrada ? <a href="auth-register.php" class="text-primary fw-semibold"> Registrate aqui </a> </p>
+                                    <p class="text-muted mb-0">No tienes cuenta registrada ? <a href="" class="text-primary fw-semibold"> Registrate aqui </a> </p>
                                 </div>
-                            </div>
-                            <div class="mt-4 mt-md-5 text-center">
-                                <p class="mb-0">© <script>
-                                        document.write(new Date().getFullYear())
-                                    </script> Minia . Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
                             </div>
                         </div>
                     </div>

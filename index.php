@@ -107,7 +107,13 @@
     margin-bottom: 82.5px;
     }
 
+    .check-container{
+        width: 50px;
+    }
 
+    .form-check-label{
+        margin-left: 20px;
+    }
 
 
   </style>
@@ -157,17 +163,12 @@
                                         <div class="input-group auth-pass-inputgroup">
                                             <input type="password" class="form-control" placeholder="Enter password" name="password" value="123456" aria-label="Password" aria-describedby="password-addon">
                                             <span class="text-danger"><?php echo $password_err; ?></span>
-                                            <button class="btn btn-light ms-0" type="button" id="password-addon"><i class="mdi mdi-eye-outline"></i></button>
                                         </div>
                                     </div>
                                     <div class="row mb-4">
-                                        <div class="col">
+                                        <div class="col check-container">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" id="remember-check">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div>
                                                 <label class="form-check-label" for="remember-check">Recordarme
                                                 </label>
                                             </div>
